@@ -1,0 +1,36 @@
+{
+    "name": "arrays-geo",
+    "description": "There are two libs implemented here for array flattening and geo search",
+    "time": "2016-03-06",
+    "keywords": ["array", "geo"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denis Stokovsky",
+            "email": "dstokovsky@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "dstokovsky@gmail.com"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "mjaschen/phpgeo": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArrayCommands\\": "arrays/src",
+            "Geo\\": "geo/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArrayCommands\\": "arrays/tests",
+            "Geo\\": "geo/tests"
+        }
+    }
+
+}
